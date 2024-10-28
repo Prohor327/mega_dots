@@ -67,6 +67,33 @@ button:hover {
 #workspaces button.urgent {
 }
 
+#cpu{
+	padding: 2 15;
+	margin: 5;
+	background-color: @bg2;
+	color: @fg;
+	border: none;
+	border-radius: 20;
+}
+
+#memory{
+	padding: 2 15;
+	margin: 5;
+	background-color: @bg2;
+	color: @fg;
+	border: none;
+	border-radius: 20;
+}
+
+#disk{
+	padding: 2 15;
+	margin: 5;
+	background-color: @bg2;
+	color: @fg;
+	border: none;
+	border-radius: 20;
+}
+
 #window {
 	padding: 2 15;
 	margin: 5;
@@ -91,7 +118,7 @@ button:hover {
 	color: @yellow;
 }
 
-#custom-foot {
+#custom-kitty {
 	padding: 2 10 2 15;
 	margin: 5 0 5 5;
 	color: @fg;
@@ -99,7 +126,7 @@ button:hover {
 	border: none;
 	border-radius: 20 0 0 20;
 }
-#custom-foot:hover {
+#custom-kitty:hover {
 	color: @yellow;
 }
 
