@@ -21,7 +21,7 @@ anchor=top-right
 ## urgency
 [urgency=low]
 font=Bebas Neue Bold 12.2
-default-timeout=2500
+default-timeout=1000
 background-color=#1e1e2e
 border-color=#cdd6f4
 text-color=#cdd6f4
@@ -29,7 +29,7 @@ text-color=#cdd6f4
 [urgency=normal]
 icons=1
 font=Bebas Neue Bold 16.3
-default-timeout=4000
+default-timeout=1000
 background-color=#1e1e2e
 border-color=#cdd6f4
 text-color=#fab387
@@ -37,7 +37,7 @@ on-notify=exec grim /home/owl/home/Music/Strange/Sic Mos - Lullaby [The Cure].mp
 
 [urgency=critical]
 font=Bebas Neue Bold 21.2
-default-timeout=0
+default-timeout=1000
 background-color=#f5c2e7
 border-color=#cdd6f4
 text-color=#1e1e2e

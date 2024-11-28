@@ -1,13 +1,12 @@
 * {
 	font-family: JetBrainsMono, Symbols Nerd Font;
-	font-weight: bold;
 	font-size: 13px;
 	min-height: 0;
 }
 
-@define-color bg #1e1e2e;
-@define-color bg2 #181825;
-@define-color fg #cdd6f4;
+@define-color bg #EAE8F8;
+@define-color bg2 #685E9B;
+@define-color fg #EAE9F8;
 @define-color pink #f5c2e7;
 @define-color green #a6e3a1;
 @define-color fl #f2cdcd;
@@ -18,8 +17,8 @@
 
 
 window#waybar {
-	border-radius: 0;
-	background-color: @bg;
+	border-radius: 5;
+	background-color: rgba(76, 79, 105, 0.5);
 }
 
 
@@ -27,10 +26,10 @@ window#waybar {
 #custom-menu {
 	padding: 2 15;
 	margin: 5 5 5 10;
-	color: @vl;
+	color: #30FFF9;
 	background-color: @bg2;
 	border: none;
-	border-radius: 20;
+	border-radius: 5;
 }
 #custom-menu:hover {
 	color: @fl;
@@ -43,7 +42,7 @@ window#waybar {
 	color: @fg;
 	background-color: @bg2;
 	border: none;
-	border-radius: 20;
+	border-radius: 3;
 }
 button {
 	box-shadow: inset 0 -3px transparent;
@@ -67,40 +66,13 @@ button:hover {
 #workspaces button.urgent {
 }
 
-#cpu{
-	padding: 2 15;
-	margin: 5;
-	background-color: @bg2;
-	color: @fg;
-	border: none;
-	border-radius: 20;
-}
-
-#memory{
-	padding: 2 15;
-	margin: 5;
-	background-color: @bg2;
-	color: @fg;
-	border: none;
-	border-radius: 20;
-}
-
-#disk{
-	padding: 2 15;
-	margin: 5;
-	background-color: @bg2;
-	color: @fg;
-	border: none;
-	border-radius: 20;
-}
-
 #window {
 	padding: 2 15;
 	margin: 5;
 	color: @yellow;
 	background-color: @bg2;
 	border: none;
-	border-radius: 20;
+	border-radius: 3;
 }
 
 
@@ -112,13 +84,13 @@ button:hover {
 	color: @fg;
 	background-color: @bg2;
 	border: none;
-	border-radius: 20;
+	border-radius: 3;
 }
 #custom-cmus:hover {
 	color: @yellow;
 }
 
-#custom-kitty {
+#custom-foot {
 	padding: 2 10 2 15;
 	margin: 5 0 5 5;
 	color: @fg;
@@ -126,7 +98,35 @@ button:hover {
 	border: none;
 	border-radius: 20 0 0 20;
 }
-#custom-kitty:hover {
+
+#cpu{
+	padding: 2 15;
+	margin: 5;
+	background-color: @bg2;
+	color: @fg;
+	border: none;
+	border-radius: 3;
+}
+
+#memory{
+	padding: 2 15;
+	margin: 5;
+	background-color: @bg2;
+	color: @fg;
+	border: none;
+	border-radius: 3;
+}
+
+#disk{
+	padding: 2 15;
+	margin: 5;
+	background-color: @bg2;
+	color: @fg;
+	border: none;
+	border-radius: 3;
+}
+
+#custom-foot:hover {
 	color: @yellow;
 }
 
@@ -136,7 +136,7 @@ button:hover {
 	color: @fg;
 	background-color: @bg2;
 	border: none;
-	border-radius: 0 20 20 0;
+	border-radius: 0 3 3 0;
 }
 #custom-nemo:hover {
 	color: @yellow;
@@ -149,7 +149,7 @@ button:hover {
 	margin: 5;
 	background-color: @bg2;
 	border: none;
-	border-radius: 20;
+	border-radius: 3;
 }
 
 #language {
@@ -158,7 +158,7 @@ button:hover {
 	color: @fg;
 	background-color: @bg2;
 	border: none;
-	border-radius: 20;
+	border-radius: 3;
 }
 #language:hover {
 	color: @yellow;
@@ -170,7 +170,7 @@ button:hover {
 	color: @fg;
 	background-color: @bg2;
 	border: none;
-	border-radius: 20;
+	border-radius: 3;
 }
 #pulseaudio.muted {
 	color: @red;
@@ -185,7 +185,7 @@ button:hover {
 	color: @fg;
 	background-color: @bg2;
 	border: none;
-	border-radius: 20;
+	border-radius: 3;
 }
 #clock:hover {
 	color: @yellow;
@@ -194,10 +194,10 @@ button:hover {
 #custom-power {
 	padding: 2 15;
 	margin: 5 10 5 5;
-	color: @pink;
+	color: #30FFF9;
 	background-color: @bg2;
 	border: none;
-	border-radius: 20;
+	border-radius: 3;
 }
 #custom-power:hover {
 	color: @red;
@@ -208,6 +208,5 @@ tooltip {
 	margin: 20px;
 	padding: 15px;
 	border: 20px solid rgba(100, 114, 125, 0);
-	border-radius: 10px;
+	border-radius: 3px;
 }
-
