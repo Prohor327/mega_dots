@@ -2,11 +2,17 @@
 {
 	"height": 1,
 	"margin" : 4,
+	"position": "down",
 
 	"modules-left": [
 	"custom/menu",
 	"hyprland/workspaces",
 	"hyprland/window"
+	],
+
+	"modules-center": [
+	"custom/cmus",
+	"custom/weather"
 	],
 
 	"modules-right": [
@@ -35,12 +41,12 @@
 			"active": "",
 			"default": ""
 			},
-		"tooltip": false,
+		"tooltip": false
 	},
 
 	"hyprland/window": {
 		"format": "{class}",
-		"separate-outputs": false,
+		"separate-outputs": false
 	},
 
 	"custom/cmus": {
@@ -66,20 +72,6 @@
 		"tooltip": false
 	},
 
-	"custom/foot": {
-		"format": "<span color='#a6e3a1'></span>",
-		"on-click": "kitty",
-		"tooltip": false
-	},
-
-	"custom/nemo": {
-		"format": "<span color='#89b4fa'>󰉋</span>",
-		"on-click": "exec nemo home/",
-		"tooltip": false
-	},
-
-
-
 	"tray": {
 		"icon-size": 18,
 		"spacing": 10
@@ -92,7 +84,7 @@
 	},
     
 	"pulseaudio": {
-		"scroll-step": 5,
+		"scroll-step": 1,
 		"format": "<span color='#fab387'>{icon}</span> {volume}%",
 		"format-icons": {
 		"default": ["", "", ""]
@@ -106,22 +98,6 @@
         "format": "<span color='#fab387'>{icon}</span> {usage}%",
 		"format-icons": "",
         "max-length": 10,
-		"on-click": "kitty htop"
-    },
-
-    "temperature": {
-        "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
-        "input-filename": "temp2_input",
-        "critical-threshold": 75,
-        "tooltip": false,
-        "format-critical": "({temperatureC}°C)",
-        "format": "({temperatureC}°C)",
-		"on-click": "kitty htop"
-    },
-
-    "disk": {
-        "format": "<span color='#fab387'>{icon}</span> {specific_free:0.1f}GB",
-		"format-icons": "",
 		"on-click": "kitty htop"
     },
 
@@ -165,9 +141,5 @@
 		"on-click": "~/.config/rofi/powermenu/type-4/powermenu.sh",
 		"escape": true,
 		"tooltip": false
-	},
-
-	"escape": true,
-	"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
 	}
 }

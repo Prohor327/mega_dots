@@ -4,7 +4,7 @@
 	min-height: 0;
 }
 
-@define-color bg #EAE8F8;
+@define-color bg rgba(76, 79, 105, 0.5);
 @define-color bg2 #685E9B;
 @define-color fg #EAE9F8;
 @define-color pink #f5c2e7;
@@ -75,9 +75,6 @@ button:hover {
 	border-radius: 3;
 }
 
-
-
-#custom-cmus,
 #custom-weather {
 	padding: 2 15;
 	margin: 5;
@@ -85,18 +82,6 @@ button:hover {
 	background-color: @bg2;
 	border: none;
 	border-radius: 3;
-}
-#custom-cmus:hover {
-	color: @yellow;
-}
-
-#custom-foot {
-	padding: 2 10 2 15;
-	margin: 5 0 5 5;
-	color: @fg;
-	background-color: @bg2;
-	border: none;
-	border-radius: 20 0 0 20;
 }
 
 #cpu{
@@ -117,33 +102,6 @@ button:hover {
 	border-radius: 3;
 }
 
-#disk{
-	padding: 2 15;
-	margin: 5;
-	background-color: @bg2;
-	color: @fg;
-	border: none;
-	border-radius: 3;
-}
-
-#custom-foot:hover {
-	color: @yellow;
-}
-
-#custom-nemo {
-	padding: 2 15 2 10;
-	margin: 5 5 5 0;
-	color: @fg;
-	background-color: @bg2;
-	border: none;
-	border-radius: 0 3 3 0;
-}
-#custom-nemo:hover {
-	color: @yellow;
-}
-
-
-
 #tray {
 	padding: 2 15;
 	margin: 5;
@@ -160,6 +118,7 @@ button:hover {
 	border: none;
 	border-radius: 3;
 }
+
 #language:hover {
 	color: @yellow;
 }
@@ -172,9 +131,11 @@ button:hover {
 	border: none;
 	border-radius: 3;
 }
+
 #pulseaudio.muted {
 	color: @red;
 }
+
 #pulseaudio:hover {
 	color: @yellow;
 }
@@ -187,6 +148,7 @@ button:hover {
 	border: none;
 	border-radius: 3;
 }
+
 #clock:hover {
 	color: @yellow;
 }
@@ -199,14 +161,7 @@ button:hover {
 	border: none;
 	border-radius: 3;
 }
+
 #custom-power:hover {
 	color: @red;
-}
-
-tooltip {
-	background: @bg;
-	margin: 20px;
-	padding: 15px;
-	border: 20px solid rgba(100, 114, 125, 0);
-	border-radius: 3px;
 }
